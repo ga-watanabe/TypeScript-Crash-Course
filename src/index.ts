@@ -27,3 +27,18 @@ const user: User = {
 let cid: any = 1
 // let customerId = <number>cid
 let customerId = cid as number
+
+
+// function
+function addNum(x: number, y: number): number {
+  return x + y
+}
+
+console.log(addNum(1, 3));
+
+function log(message: number | string): void {
+  console.log(message);
+}
+
+log(1)
+log("aaa")
