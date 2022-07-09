@@ -10,3 +10,7 @@ var Direction;
     Direction[Direction["left"] = 13] = "left";
 })(Direction || (Direction = {}));
 console.log(Direction.down);
+const user = {
+    id: 1,
+    name: 'John'
+};
