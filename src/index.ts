@@ -58,3 +58,12 @@ const user1: UserInterface = {
 console.log(user1);
 
 // function interface
+interface Mathfunc {
+  (x: number, y: number): number
+}
+
+const add: Mathfunc = (x: number, y: number): number => x + y
+const sub: Mathfunc = (x: number, y: number): number => x - y
+
+console.log(add(1,2));
+console.log(sub(1,2));
