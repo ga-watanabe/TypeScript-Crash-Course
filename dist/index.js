@@ -37,3 +37,16 @@ const add = (x, y) => x + y;
 const sub = (x, y) => x - y;
 console.log(add(1, 2));
 console.log(sub(1, 2));
+class Person {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    register() {
+        return `${this.name} is now registered`;
+    }
+}
+const brad = new Person(1, 'brad');
+const mike = new Person(2, 'mike');
+console.log(brad, mike);
+console.log(brad.register());

@@ -45,8 +45,8 @@ log("aaa")
 
 // interface
 interface UserInterface {
-  readonly id: number,
-  name: string,
+  readonly id: number
+  name: string
   age?: number
 }
 
@@ -67,3 +67,30 @@ const sub: Mathfunc = (x: number, y: number): number => x - y
 
 console.log(add(1,2));
 console.log(sub(1,2));
+
+
+// class
+interface PersonInterface {
+  id: number
+  name: string
+  register(): string
+}
+class Person implements PersonInterface {
+  id: number
+  name: string
+
+  constructor(id: number, name: string) {
+    this.id = id
+    this.name = name
+  }
+
+  register() {
+    return `${this.name} is now registered`
+  }
+}
+
+const brad = new Person(1, 'brad')
+const mike = new Person(2, 'mike')
+
+console.log(brad, mike);
+console.log(brad.register());
