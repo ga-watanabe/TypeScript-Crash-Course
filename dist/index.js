@@ -28,3 +28,9 @@ function log(message) {
 }
 log(1);
 log("aaa");
+const user1 = {
+    id: 1,
+    name: 'John'
+};
+console.log(user1);
+// function interface

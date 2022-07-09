@@ -42,3 +42,19 @@ function log(message: number | string): void {
 
 log(1)
 log("aaa")
+
+// interface
+interface UserInterface {
+  readonly id: number,
+  name: string,
+  age?: number
+}
+
+const user1: UserInterface = {
+  id: 1,
+  name: 'John'
+}
+
+console.log(user1);
+
+// function interface
