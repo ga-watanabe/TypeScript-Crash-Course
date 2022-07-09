@@ -94,3 +94,18 @@ const mike = new Person(2, 'mike')
 
 console.log(brad, mike);
 console.log(brad.register());
+
+// extending class
+class Employee extends Person {
+  position: string
+
+  constructor(id: number, name: string, position: string) {
+    super(id, name)
+    this.position = position
+  }
+}
+
+const emp = new Employee(3, 'Shawn', 'Developer')
+
+console.log(emp.register());
+console.log(emp.position);

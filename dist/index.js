@@ -50,3 +50,13 @@ const brad = new Person(1, 'brad');
 const mike = new Person(2, 'mike');
 console.log(brad, mike);
 console.log(brad.register());
+// extending class
+class Employee extends Person {
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const emp = new Employee(3, 'Shawn', 'Developer');
+console.log(emp.register());
+console.log(emp.position);
