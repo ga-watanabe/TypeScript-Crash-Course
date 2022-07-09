@@ -109,3 +109,11 @@ const emp = new Employee(3, 'Shawn', 'Developer')
 
 console.log(emp.register());
 console.log(emp.position);
+
+// generics
+function test<T>(arg: T): T {
+  return arg
+}
+
+console.log(test(1));
+console.log(test("aaa"));
